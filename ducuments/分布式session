@@ -1,0 +1,10 @@
+1、session持久化都DB，保证宕机时会话不会丢失，缺点是系统吞吐收到影响。
+2、session存储在缓存集群上，保证较高的读写性能。安全性方面，session是有有效期的，使用缓存，也便于利用缓存的失效机制。缺点是一旦缓存重启，保存的会话也丢失，需要用户重新建立会话。
+3、通过将session以sessionid作为key，保存到后端的缓存集群中，使得不管请求如何分配，即便是Web Server宕机，也不会影响其他Web Server通过sessionid从Cache Server中获得session，这样既实现了集群间的session同步，又提高了Web Server的容错性。
+4、memcached-session-manager，是一个高可用的Tomcat session共享解决方案。
+   Sticky模式：表示每次请求都会被映射到同一台后端Web Server，直到该Web Server宕机，这样session可先存放在服务器本地，等到请求处理完成再同步到后端memcache服务器；而当Web Server宕机时，请求被映射到其他Web Server，这时候，其他Web Server可以从后端memcache中恢复session。
+   
+   Non-Sticky模式：请求每次映射的后端Web Server是不确定的，当请求到来时，从memcache中加载session；当请求处理完成时，将session再写回到memcache。
+
+5、Tomcat中配置SessionManager
+6、   

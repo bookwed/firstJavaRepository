@@ -1,0 +1,8 @@
+1、springmvc架子
+2、httpPost（上传）
+3、JSON和XML
+4、RESTful和RPC
+5、服务的路由和负载均衡算法
+6、ZooKeeper
+7、gateway网关（权限与安全校验），流量的监控和容量规划，gateway集群的可扩展性
+8、
