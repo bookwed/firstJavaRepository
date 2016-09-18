@@ -5,4 +5,4 @@
 5、服务的路由和负载均衡算法
 6、ZooKeeper
 7、gateway网关（权限与安全校验），流量的监控和容量规划，gateway集群的可扩展性
-8、消息系统：ActiveMQ、Kafka
+8、消息系统：ActiveMQ、Kafka，ActiveMQ集群
