@@ -62,6 +62,7 @@
 	    <artifactId>zkclient</artifactId>
 	    <version>0.7</version>
 	</dependency>
+	<!-- 操作memcache -->
 	<dependency>
 	    <groupId>com.whalin</groupId>
 	    <artifactId>Memcached-Java-Client</artifactId>
@@ -71,6 +72,12 @@
 	    <groupId>de.javakaffee.msm</groupId>
 	    <artifactId>memcached-session-manager-tc7</artifactId>
 	    <version>2.0.0</version>
+	</dependency>
+	<!-- 操作hbase -->
+	<dependency>
+	    <groupId>org.apache.hbase</groupId>
+	    <artifactId>hbase-client</artifactId>
+	    <version>1.1.2</version>
 	</dependency>
   </dependencies>
 </project>
