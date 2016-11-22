@@ -85,7 +85,6 @@
 	  <artifactId>activemq-all</artifactId>
 	  <version>5.14.0</version>
 	</dependency>
-	
 	<!-- 必须加上，否则pom编译报错 -->
 	<dependency>  
 	    <groupId>jdk.tools</groupId>  
@@ -94,5 +93,11 @@
 	    <scope>system</scope>  
 	    <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>  
 	</dependency>  
+	<!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+	<dependency>
+	    <groupId>org.apache.lucene</groupId>
+	    <artifactId>lucene-core</artifactId>
+	    <version>5.5.0</version>
+	</dependency>
   </dependencies>
 </project>

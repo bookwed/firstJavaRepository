@@ -5,4 +5,7 @@
 5、服务的路由和负载均衡算法
 6、ZooKeeper
 7、gateway网关（权限与安全校验），流量的监控和容量规划，gateway集群的可扩展性
-8、消息系统：ActiveMQ、Kafka，ActiveMQ集群
+8、消息系统：ActiveMQ、Kafka，ActiveMQ集群，http://192.168.137.10:8161/admin/，JMSTemplate 
+9、Lucene、Solr（概念：倒排索引、分词、停止词、排序；文档、域、词、查询、分词器）
+10、XSS、CSRF、SQL注入、文件上传漏洞（魔数）、DDos（DNS Query Flood,HTTP Flood,SYN Flood）
+11、系统监控（应用层检测）
